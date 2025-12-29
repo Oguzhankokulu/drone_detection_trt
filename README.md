@@ -24,7 +24,7 @@ Our benchmarks show significant performance improvements with TensorRT optimizat
 
 | Metric | PyTorch | TensorRT | Improvement |
 |--------|---------|----------|-------------|
-| **Inference Speed (FPS)** | 156.0 FPS | 534.8 FPS | **🚀 3.43x faster** |
+| **Inference Speed (FPS)** | 156.0 FPS | 534.8 FPS | **3.43x faster** |
 | **Inference Latency** | 6.41 ms | 1.87 ms | **71% reduction** |
 | **Total Processing Time** | 7.83 ms | 3.56 ms | **2.2x faster** |
 | **mAP@50** | 0.4674 | 0.4670 | Maintained (99.9%) |
