@@ -296,16 +296,6 @@ If you use the VisDrone dataset, please cite:
 }
 ```
 
-## Contributing
-
-Contributions are welcome! Areas for improvement:
-- [ ] Add more augmentation strategies
-- [ ] Implement model ensembling
-- [ ] Add REST API for serving
-- [ ] Docker containerization
-- [ ] Support for more datasets
-- [ ] INT8 quantization with calibration
-
 ## License
 
 This project is provided as-is for educational and research purposes. Please respect the VisDrone dataset license terms.
