@@ -24,18 +24,22 @@ Our benchmarks show significant performance improvements with TensorRT optimizat
 
 | Metric | PyTorch | TensorRT | Improvement |
 |--------|---------|----------|-------------|
-| **Inference Speed (FPS)** | ~45 FPS | ~110 FPS | **2.4x faster** |
-| **Inference Latency** | ~22 ms | ~9 ms | **59% reduction** |
-| **mAP@50** | ~0.45 | ~0.45 | Maintained |
-| **Model Size** | 19.2 MB | 22.0 MB | +14.6% (includes optimized kernels) |
+| **Inference Speed (FPS)** | 156.0 FPS | 534.8 FPS | **🚀 3.43x faster** |
+| **Inference Latency** | 6.41 ms | 1.87 ms | **71% reduction** |
+| **Total Processing Time** | 7.83 ms | 3.56 ms | **2.2x faster** |
+| **mAP@50** | 0.4674 | 0.4670 | Maintained (99.9%) |
+| **mAP@50-95** | 0.2684 | 0.2680 | Maintained (99.9%) |
+| **Precision** | 0.6535 | 0.6529 | Maintained |
+| **Recall** | 0.4254 | 0.4265 | Maintained |
+| **Model Size** | 18.27 MB | 20.97 MB | +14.8% (includes optimized kernels) |
 
-> **Note**: TensorRT engines are larger because they include pre-compiled, hardware-specific optimized kernels for your GPU. This trade-off delivers significantly faster inference speeds.
+> **Note**: TensorRT engines are larger because they include pre-compiled, hardware-specific optimized kernels for your GPU. This trade-off delivers significantly faster inference speeds with virtually no accuracy loss.
 
 ### Why TensorRT is Larger but Better:
 - Pre-optimized GPU kernels specific to RTX 4050
 - Fused operations and optimized computation graph
 - FP16 precision constants and specialized data structures
-- **Result**: 2.4x speed improvement for minimal storage cost
+- **Result**: **3.43x speed improvement** with maintained accuracy for only 2.7 MB storage cost
 
 ## Project Structure
 
