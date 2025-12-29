@@ -1,0 +1,14 @@
+path: data/visdrone_yolo
+
+train: images/train
+val: images/val
+test: images/test
+
+# Number of classes
+nc: 3
+
+# Class Names
+names:
+  0: Person
+  1: Vehicle
+  2: Cycle
